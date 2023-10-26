@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--  <TextView-->
+    <!--       android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--     android:gravity="center"-->
+    <!--       android:text="Welcome to Code Skiils"-->
+    <!--        android:textSize="@dimen/_13sdp"-->
+    <!--        android:textStyle="italic"-->
+    <!--        android:textColor="@color/purple_700"-->
+    <!--        android:layout_marginTop="6dp"/>-->
+
+    <!--        />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splash"
+        android:layout_width="@dimen/_150sdp"
+        app:lottie_loop="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/splash_anim"
+        android:layout_height="@dimen/_150sdp"/>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash"
+        android:layout_marginTop="164dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_inButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_baseline_login_24"
+            app:cornerRadius="@dimen/_3sdp"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/googleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in with google"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            app:icon="@drawable/google"
+            app:cornerRadius="@dimen/_3sdp"
+
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/create_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:icon="@drawable/new_account"
+            app:cornerRadius="@dimen/_3sdp"
+            android:text="Create an account"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/skipButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:icon="@drawable/sskip"
+            app:cornerRadius="@dimen/_3sdp"
+
+            android:text="Skip"
+            android:textAllCaps="false"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+    <!--<Button-->
+    <!--android:id="@+id/log_outButton"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:background="#e74c3c"-->
+    <!--android:text="Log out"-->
+    <!--android:textAllCaps="false"-->
+    <!--android:textColor="@color/white"-->
+
+    <!--    />-->
+
+
+    <!--    android:background="@drawable/blue"-->
